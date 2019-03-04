@@ -1,0 +1,11 @@
+.searchComp{
+    display: flex;
+    margin: 50px;
+}
+
+.btn-group{
+    margin-left: 160px;
+}
+.search-btn{
+    margin-left: 250px;
+}
