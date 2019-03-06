@@ -8,9 +8,10 @@ class App extends Component {
   render() {
     return (
         <div>
-          <Header mainHeading='Git Hub Search App'/>
-          <SearchComponent/>
-          <DisplayLists/>
+               <Header mainHeading='Git Hub Search App'/>  
+               <SearchComponent/>
+               <DisplayLists/>
+      
         </div>
     );
   }

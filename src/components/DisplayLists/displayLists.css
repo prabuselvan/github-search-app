@@ -1,0 +1,9 @@
+.users-heading{
+    text-align: center;
+}
+
+.displayLists--outer::after{
+    content: "";
+    display: block;
+    clear: both;
+}

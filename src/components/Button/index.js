@@ -1,10 +1,10 @@
  import React from 'react';
 import propTypes from 'prop-types';
 import './button.css';
- const Button =({value, onClick})=> {
+ const Button =({value, name, onClick})=> {
      return (
             <div>
-                <button type='button' className='btn btn-primary button' onClick={onClick}> {value} </button>
+                <button type='button' className='btn btn-primary button'  name={name} onClick={onClick}> {value} </button>
             </div>
      )
  }
