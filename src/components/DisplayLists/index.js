@@ -2,7 +2,8 @@ import React from 'react';
 import Pagination from '../Pagination';
 import './displayLists.css';
 
-const DisplayLists = ({toDisplay, data, viewRepos, currentPage, noofitems})=> {
+const DisplayLists = ({toDisplay,count, data, viewRepos, currentPage, noofitems, onPageChange})=> {
+
     return(
         <div className='displayLists--outer'>
             {toDisplay &&
@@ -15,11 +16,11 @@ const DisplayLists = ({toDisplay, data, viewRepos, currentPage, noofitems})=> {
                                     <th scope="col"> Created At </th>
                                     <th scope="col"> Updated At </th>
                                     <th scope="col"> Owner </th>
-                                    <th scope='col'> Location </th>
+                                    {/* <th scope='col'> Location </th>
                                     <th scope='col'> repos_url</th>
                                     <th scope='col'>public_repos</th>
                                     <th scope='col'>followers</th>
-                                    <th scope='col'>following</th>
+                                    <th scope='col'>following</th> */}
                                 </tr>
                         </thead>
                         <tbody>
@@ -38,7 +39,7 @@ const DisplayLists = ({toDisplay, data, viewRepos, currentPage, noofitems})=> {
                         </tbody>
                     </table>
             </div>}
-                <Pagination  data={data} currentPage={currentPage} noofitems={noofitems}/>
+                <Pagination  count={count} currentPage={currentPage} noofitems={noofitems} onPageChange={onPageChange}/>
         </div>
     )
 }

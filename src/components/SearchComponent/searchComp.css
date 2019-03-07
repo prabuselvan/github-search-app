@@ -1,11 +1,23 @@
 .searchComp{
-    display: flex;
     margin: 50px;
+    float: left;
+    width: 100%;
 }
-
+.inputbox{
+    float: left;
+    width: 300px;
+}
 .btn-group{
-    margin-left: 160px;
+    margin-left: 300px;
+    float: left;
 }
 .search-btn{
     margin-left: 250px;
+    float: left;
+}
+
+.searchComp::after{
+    content: "";
+    clear: both;
+    display: table;
 }
