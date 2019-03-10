@@ -1,0 +1,25 @@
+
+.userDetailsleft{
+    float: left;
+    border: 1px solid grey;
+    margin-top: 50px;
+    padding: 25px;
+ 
+}
+.userdetailsright{
+    float: right;
+    
+}
+
+.userDetailsouter::after {
+    content: "";
+    display: table;
+    clear: both;
+    /* width: 100%; */
+}
+
+.userHeading{
+    /* content: "";
+    display: table;
+    clear: both; */
+}

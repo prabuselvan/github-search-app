@@ -1,18 +1,21 @@
+import { BrowserRouter } from 'react-router-dom';
+import { Switch,  Route } from 'react-router-dom';
 import React, { Component } from 'react';
-import Header from '../src/components/Header';
-import SearchComponent from '../src/components/SearchComponent';
-import DisplayLists from '../src/components/DisplayLists';
+import Repo from '../src/components/RepositoryPage';
+import GithubComponent from '../src/components/GithubComponent';
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-        <div>
-               <Header mainHeading='Git Hub Search App'/>  
-               <SearchComponent/>
-               <DisplayLists/>
-      
-        </div>
+      <BrowserRouter>
+        <Switch>
+                  <Route path='/' exact component={GithubComponent}/>
+                  {/* <Route path='/repository' exact render={(props)=> <Repo repoName ={repoName}/>}/> */}
+                  <Route path='/repository' exact component={Repo}/>
+        </Switch>
+      </BrowserRouter>
     );
   }
 }

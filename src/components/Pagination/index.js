@@ -1,5 +1,6 @@
 import  React  from 'react';
 import _ from 'lodash';
+import './pagination.css';
 const Pagination= ({count, currentPage,noofitems, onPageChange})=> {
 
     console.log('count is ', count);
